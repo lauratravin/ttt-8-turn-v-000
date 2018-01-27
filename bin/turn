@@ -10,7 +10,7 @@ turn(board)
 user_input = gets.strip
 position = input_to_index(user_input)
 if valid_move?(board, position)
-  put "ok"
+  puts "ok"
 
 
 else
