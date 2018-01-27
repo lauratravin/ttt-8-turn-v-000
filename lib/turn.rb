@@ -31,14 +31,3 @@ def move(board, index, value="X")
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-
-
-# def position_taken?(board, position)
-#   if board[position] == "X" || board[position] == "O"
-#     true
-#   elsif board[position] == " "
-#     false
-#
-#   else
-#     false
-# end
