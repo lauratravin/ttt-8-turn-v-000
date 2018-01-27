@@ -33,12 +33,12 @@ def move(board, index, value="X")
 end
 
 
-def position_taken?(board, position)
-  if board[position] == "X" || board[position] == "O"
-    true
-  elsif board[position] == " "
-    false
-  end
-  else
-    false
-end
+# def position_taken?(board, position)
+#   if board[position] == "X" || board[position] == "O"
+#     true
+#   elsif board[position] == " "
+#     false
+#
+#   else
+#     false
+# end
