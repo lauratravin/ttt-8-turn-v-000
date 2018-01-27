@@ -10,6 +10,18 @@ def input_to_index(user_input)
   index = user_input.to_i - 1
 end
 
+def valid_move?(board, position)
+  if position.between?(0,8) && board[position] == " "
+    true
+  else
+    false
+  end
+end
+
+def input_to_index(user_input)
+  index = user_input.to_i - 1
+end
+
 def move(board, index, value)
   board[index] = value
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
