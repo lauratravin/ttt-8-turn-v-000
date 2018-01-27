@@ -12,11 +12,11 @@ def turn(board)
 
   if valid_move?(board, input_to_index(user_input))
 
-       move(board, index, value="X")
+       move(board, input_to_index(user_input), value="X")
 
   else
 
-      until valid_move?(board, index)
+      until valid_move?(board, input_to_index(user_input))
         puts "Not valid enter"
         turn(board)
         user_input = gets.strip
