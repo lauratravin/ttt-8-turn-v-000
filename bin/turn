@@ -8,3 +8,14 @@ puts "Welcome to Tic Tac Toe!"
 display_board(board)
 turn(board)
 user_input = gets.strip
+position = input_to_index(user_input)
+if valid_move?(board, position)
+else
+    until valid_move?(board, position)
+      turn(board)
+      user_input = gets.strip
+      position = input_to_index(user_input)
+
+    end
+
+end
