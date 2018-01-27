@@ -16,5 +16,5 @@ def position_taken?(board, position)
   elsif board[position] == " "
     false
   else
-    false 
+    false
 end
