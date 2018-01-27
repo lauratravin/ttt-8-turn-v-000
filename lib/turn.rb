@@ -9,3 +9,12 @@ end
 def input_to_index(user_input)
   index = user_input.to_i - 1
 end
+
+def position_taken?(board, position)
+  if board[position] == "X" || board[position] == "O"
+    true
+  elsif board[position] == " "
+    false
+  else
+    false 
+end
