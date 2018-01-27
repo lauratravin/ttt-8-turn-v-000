@@ -9,18 +9,18 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
+  index = input_to_index(user_input)
+  if valid_move?(board, index)
 
-  if valid_move?(board, input_to_index(user_input))
-
-       move(board, input_to_index(user_input), value="X")
+       move(board, index, value="X")
 
   else
 
-      until valid_move?(board, input_to_index(user_input))
+      until valid_move?(board, index)
         puts "Not valid enter"
         turn(board)
         user_input = gets.strip
-        position = input_to_index(user_input)
+        index = input_to_index(user_input)
       end
 
   end
